@@ -23,10 +23,14 @@ const FoodDetailPage = async ({ params }) => {
         <div className="card-body">
           <h2 className="card-title">
             {expectedFood?.dish_name}
-            <div className="badge badge-secondary">{expectedFood?.category}</div>
+            <div className="badge badge-secondary">
+              {expectedFood?.category}
+            </div>
           </h2>
 
-          <p className="text-xl font-semibold">{expectedFood?.price.toFixed(2)} Taka</p>
+          <p className="text-xl font-semibold">
+            {expectedFood?.price.toFixed(2)} Taka
+          </p>
         </div>
       </div>
     </div>
